@@ -1,0 +1,14 @@
+Briefly discuss your results in a separate text file. Are they what you expect? What accounts for the disparity in time elapsed for the different solutions?
+
+
+I am getting the highest time in Left-handed solution because it's giving priority to left handed philosopher to eat first and then other philosophers. 
+So other philosophers are thinking while left handed one is eating. So it may go into starvation problem. 
+
+
+In Footman solution, one by one gets a chance to eat. The philosoher thinks indefinitely and every eating philosopher ends eating eventually, giving way for 
+other philosophers to eat. So that is why it takes time to complete it.
+
+
+And at last, Tanenbaum Solution checks whether left or right philosopher is eating or not. If they are not then that philosopher gets the fork and 
+this way it takes less time to complete. Tanenbaum's solution avoids deadlock, by always avoiding one philosopher from trying the lock, to make sure that 
+atleast one of the others will get chance to eat. However, it might lead to one philosopher never getting a chance to eat at all. 
